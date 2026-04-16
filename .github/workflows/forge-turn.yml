@@ -1,0 +1,17 @@
+name: Forge Turn
+on:
+  push:
+    paths: ['world/commands/**']
+    branches: [master, main]
+jobs:
+  process:
+    runs-on: self-hosted
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 bridges/forge_engine.py --world-dir world
+      - run: |
+          git config user.name "Forge Engine"
+          git config user.email "forge@plato.local"
+          git add -A
+          git diff --staged --quiet || git commit -m "Forge turn: $(date -u +%Y%m%d-%H%M%S)"
+          git push

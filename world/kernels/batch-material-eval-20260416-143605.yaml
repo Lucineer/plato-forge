@@ -1,0 +1,16 @@
+agent: helmsman
+benchmarks:
+- batch-material-eval-20260416-143605-bench-143745
+- batch-material-eval-20260416-143605-bench-144050
+- batch-material-eval-20260416-143605-bench-144422
+- batch-material-eval-20260416-143605-bench-145030
+- batch-material-eval-20260416-143605-bench-145432
+- batch-material-eval-20260416-143605-bench-150043
+- batch-material-eval-20260416-143605-bench-150401
+description: "Chess material evaluation \u2014 8 regs, 512 threads, 100% occupancy\
+  \ sm_87"
+id: batch-material-eval-20260416-143605
+lang: ptx
+name: batch-material-eval
+status: benchmarked
+submitted: '2026-04-16T14:36:05.065142+00:00'

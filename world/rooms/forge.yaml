@@ -1,0 +1,6 @@
+name: PLATO Forge
+stats:
+  benchmarks_run: 7
+  compiles_fail: 6
+  compiles_pass: 1
+  kernels_submitted: 1
